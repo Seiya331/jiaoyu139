@@ -1,0 +1,1 @@
+<h2><a href="[field:arcurl/]" >[field:title/]</a></h2><h6><a href="[field:arcurl/]" >[field:description function='cn_substr(@me,70)'/]...</a></h6>

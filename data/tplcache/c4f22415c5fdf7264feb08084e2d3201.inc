@@ -1,0 +1,1 @@
+<li><span><a href='[field:typeurl function='str_replace("index.htm","",@me)'/]'><font class="f_new3">[field:typename function='cn_substr(@me,3)'/]</font></a></span><a href="[field:arcurl /]" target="_blank">[field:title /]</a></li>

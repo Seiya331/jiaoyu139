@@ -1,0 +1,1 @@
+<a href="[field:arcurl/]" target="_blank" class="c6_14b">[field:title/]</a><br /><p>[field:description function='cn_substr(@me,90)'/]...<a href="[field:arcurl/]" target="_blank" class="c6_12">查看详细</a></p>
