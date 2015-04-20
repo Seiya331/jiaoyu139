@@ -8,7 +8,7 @@
 	<!--[if lt IE 9 ]>
 		<script type="text/javascript" src="http://img.ikanchai.com/templates/ikanchai/js/helper/modernizr.js"></script>
 	<![endif]-->
-	<script async="" type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/ca-pub-8113610840957248.js"></script>
+	<script async type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/ca-pub-8113610840957248.js"></script>
 	<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/cmstop-common.js"></script>
 	<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery.js"></script>
 	<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/config.js"></script>
@@ -134,18 +134,17 @@ glyphicon-leaf"></span>&nbsp;&nbsp;Next<i></i></a></strong>
     <!--顶部文字新闻-->
 	<div class="latestnews" style="overflow: hidden;">
 		<ul id="miniNewsRegion" style="top: -90px;">
-			<li>		    <img src="{dede:global.cfg_templets_skin/}/images/symbol-1.png" alt="一切产业都是媒体，企业自媒体正在风起云涌"><a href="http://www.ikanchai.com/2014/1221/8582.shtml" target="_blank" title="一切产业都是媒体，企业自媒体正在风起云涌">一切产业都是媒体，企业自媒体正在风起</a>
-	  		    <img src="{dede:global.cfg_templets_skin/}/images/symbol-1.png" alt="回首历史，拉手网的命运竟早注定"><a href="http://www.ikanchai.com/2014/1219/8491.shtml" target="_blank" title="回首历史，拉手网的命运竟早注定">回首历史，拉手网的命运竟早注定</a>
-	  </li><li>		    <img src="{dede:global.cfg_templets_skin/}/images/symbol-1.png" alt="支付宝为啥会看上中国大妈？"><a href="http://www.ikanchai.com/2014/1219/8489.shtml" target="_blank" title="支付宝为啥会看上中国大妈？">支付宝为啥会看上中国大妈？</a>
-	  		    <img src="{dede:global.cfg_templets_skin/}/images/symbol-1.png" alt="全世界最爱网购的并非中国人，而是英国人"><a href="http://www.ikanchai.com/2014/1217/8415.shtml" target="_blank" title="全世界最爱网购的并非中国人，而是英国人">全世界最爱网购的并非中国人，而是英国</a>
-	  </li><li>		    <img src="{dede:global.cfg_templets_skin/}/images/symbol-1.png" alt="Uber目前正在全球范围内面临这五大危机"><a href="http://www.ikanchai.com/2014/1217/8414.shtml" target="_blank" title="Uber目前正在全球范围内面临这五大危机">Uber目前正在全球范围内面临这五大危机</a>
-	  		    <img src="{dede:global.cfg_templets_skin/}/images/symbol-1.png" alt="扒一扒百度、Uber、YouTube这些公司的原罪"><a href="http://www.ikanchai.com/2014/1217/8412.shtml" target="_blank" title="扒一扒百度、Uber、YouTube这些公司的原罪">扒一扒百度、Uber、YouTube这些公司的</a>
-	  </li><li>		    <img src="{dede:global.cfg_templets_skin/}/images/symbol-1.png" alt="Facebook应用将自动美化照片 无需用户自己动手"><a href="http://www.ikanchai.com/2014/1217/8411.shtml" target="_blank" title="Facebook应用将自动美化照片 无需用户自己动手">Facebook应用将自动美化照片 无需用户</a>
-	  		    <img src="{dede:global.cfg_templets_skin/}/images/symbol-1.png" alt="中国科技企业全球扩张：瞄准以色列投资机会"><a href="http://www.ikanchai.com/2014/1217/8410.shtml" target="_blank" title="中国科技企业全球扩张：瞄准以色列投资机会">中国科技企业全球扩张：瞄准以色列投资</a>
-	  </li>
-		<li>		    <img src="{dede:global.cfg_templets_skin/}/images/symbol-1.png" alt="一切产业都是媒体，企业自媒体正在风起云涌"><a href="http://www.ikanchai.com/2014/1221/8582.shtml" target="_blank" title="一切产业都是媒体，企业自媒体正在风起云涌">一切产业都是媒体，企业自媒体正在风起</a>
-	  		    <img src="{dede:global.cfg_templets_skin/}/images/symbol-1.png" alt="回首历史，拉手网的命运竟早注定"><a href="http://www.ikanchai.com/2014/1219/8491.shtml" target="_blank" title="回首历史，拉手网的命运竟早注定">回首历史，拉手网的命运竟早注定</a>
-	  </li></ul>
+        <li>
+        {dede:arclist  titlelen=60 orderby=id typeid=8 flag='s' limit='0,2'}
+			<img src="http://img.ikanchai.com/templates/ikanchai/html/images/symbol-1.png" alt="[field:title /]"><a href="[field:arcurl /]" target="_blank" title="[field:title /]">[field:title /]</a>
+      {/dede:arclist}
+      </li>
+      <li>
+        {dede:arclist  titlelen=60 orderby=id typeid=8 flag='s' limit='2,2'}
+			<img src="http://img.ikanchai.com/templates/ikanchai/html/images/symbol-1.png" alt="[field:title /]"><a href="[field:arcurl /]" target="_blank" title="[field:title /]">[field:title /]</a>
+      {/dede:arclist}
+      </li>
+      </ul>
 		<!--<div class="msearch">
 			 <input type="text" placeholder="输入关键词" class="text-msearch" id="baiduSearch">
 <input type="button" class="btn-msearch">
@@ -174,11 +173,11 @@ glyphicon-leaf"></span>&nbsp;&nbsp;Next<i></i></a></strong>
 			</ul>
 </div>
 <ul class="tab">
-        	<li class="" style="width: 130px;"><div class="color1">明修生态栈道，暗度B2C陈仓，450亿的小米故事将由电</div></li>
+        <li class="" style="width: 130px;"><div class="color1">明修生态栈道，暗度B2C陈仓，450亿的小米故事将由电</div></li>
 		<li class="" style="width: 130px;"><div class="color2">澎湃颓势难挽，微信时代《南方周末》迎来重生</div></li>
 		<li class="" style="width: 130px;"><div class="color3">顺势而为站上风口，互联网+让中国经济飞起来！</div></li>
 		<li class="on" style="width: 130px;"><div class="color4">被柴静刷屏了，教育139想静静。</div></li>
-	</ul>
+</ul>
 
 		</div>
 		<!-- @首页幻灯片 -->
@@ -491,14 +490,14 @@ glyphicon-leaf"></span>&nbsp;&nbsp;Next<i></i></a></strong>
       <!--品牌展示-->
       <div class="brandshow">
       <div class="com-title"><span><img src="{dede:global.cfg_templets_skin/}/images/symbol-5.png" alt="">品牌展示</span></div>
-<script async="" src="./[zgj]_files/adsbygoogle.js"></script>
+<script async src="./[zgj]_files/adsbygoogle.js"></script>
 <!-- 教育139首页合作伙伴广告位（新） -->
 <ins class="adsbygoogle" style="display: block; height: 50px;" data-ad-client="ca-pub-8113610840957248" data-ad-slot="5397884430" data-ad-format="auto" data-adsbygoogle-status="done"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:50px;margin:0;padding:0;position:relative;visibility:visible;width:320px;background-color:transparent"><ins id="aswift_0_anchor" style="display:block;border:none;height:50px;margin:0;padding:0;position:relative;visibility:visible;width:320px;background-color:transparent"><iframe width="320" height="50" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;"></iframe></ins></ins></ins>
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 <!-- 合作伙伴2 -->
-<script async="" src="./[zgj]_files/adsbygoogle.js"></script>
+<script async src="./[zgj]_files/adsbygoogle.js"></script>
 <!-- 教育139首页合作伙伴广告位2 -->
 <ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-8113610840957248" data-ad-slot="5537485231" data-adsbygoogle-status="done"><ins id="aswift_1_expand" style="display:inline-table;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:336px;background-color:transparent"><ins id="aswift_1_anchor" style="display:block;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:336px;background-color:transparent"><iframe width="336" height="280" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;"></iframe></ins></ins></ins>
 <script>
