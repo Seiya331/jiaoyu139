@@ -1,8 +1,7 @@
 <?php
 global $cfg_Cs;
 $cfg_Cs=array();
-$cfg_Cs[2]=array(0,1,1,'5L2T5Yi25YaF6ICD6K+V');
-$cfg_Cs[3]=array(2,1,1,'5YWs5Yqh5ZGY');
-$cfg_Cs[4]=array(2,1,1,'5LqL5Lia5Y2V5L2N');
-$cfg_Cs[5]=array(0,1,1,'6IGM5Lia6ICD6K+V');
+$cfg_Cs[8]=array(6,1,1,'56CN5p+0572R');
+$cfg_Cs[6]=array(0,1,1,'56eR5oqA5ZKo6K+i');
+$cfg_Cs[7]=array(6,1,1,'Q1NETg==');
 ?>
